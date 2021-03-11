@@ -1,0 +1,105 @@
+body {
+  background-color: #2B4162;
+}
+.Wrapper {
+  /*padding: 50px;*/
+  /*max-width: 1024px;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  color: #F5F0F6;
+  font-family: 'Nunito', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5px;
+  color : #F5F0F6;
+}
+h3 {
+  letter-spacing: 10px;
+  margin: 40px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}
+
+
+
+.Menu {
+  overflow: hidden;
+  background-color: #2B4162;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+.Menu a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: 20px 40px;
+  text-decoration: none;
+  font-size: 14px;
+}
+a:link {
+  color: #4BC0D9;
+} 
+a:visited {
+  text-decoration: none;
+  color: #4BC0D9;
+}  
+a:hover {
+  color: #FC9E4F;
+}  
+a:active {
+  text-decoration: underline;
+}
+  
+
+
+.ContextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+.Context, .Points {
+  width: 45%;
+  text-align: justify;
+}
+.Title3 {
+  text-align: left;
+}
+.Title2 {
+  text-align: left;
+}
+
+
+
+.PlayerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 25px;
+}
+.Space {
+  width: 45%;
+}
+.PlayerTitle2 {
+  text-align: right;
+}
+.Player {
+  width: 45%;
+  text-align: justify;
+}

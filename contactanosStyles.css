@@ -1,0 +1,193 @@
+body {
+  background-color: #2B4162;
+}
+.Wrapper {
+  /*padding: 50px;*/
+  /*max-width: 1024px;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  color: #F5F0F6;
+  font-family: 'Nunito', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+  color : #F5F0F6;
+}
+h3 {
+  letter-spacing: 10px;
+  margin: 40px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+ color: #4BC0D9;
+}
+p {
+  margin: 5px 0px 0px 0px;
+}  
+  
+  
+  
+.Menu {
+  overflow: hidden;
+  background-color: #2B4162;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.Menu a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: 20px 40px;
+  text-decoration: none;
+  font-size: 14px;
+}
+a:link {
+  color: #4BC0D9;
+} 
+a:visited {
+  text-decoration: none;
+  color: #4BC0D9;
+}  
+a:hover {
+  color: #FC9E4F;
+}  
+a:active {
+  text-decoration: underline;
+}
+
+
+
+.TitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+}
+.LogoTecContainer {
+  background-color: #F5F0F6;
+  border-radius: 10px;
+  width: 20%;
+  padding: 15px;
+  margin: 20px;
+}
+.Image1 {
+  width: 100%;
+}
+
+
+
+
+.ProfessorsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+}
+.Title3 {
+  color: #FC9E4F;
+  margin-bottom: 15px;
+}
+.Professors {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 100%;
+  /*margin-top: 50px;*/
+  text-align: center;
+}
+.Box {
+  background-color: #F5F0F6;
+  border-radius: 10px;
+  width:20%;
+}
+.Image {
+  width: 80%;
+  padding: 10px;
+}
+.ProfessorsDataContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 100%;
+  /*margin-top: 50px;*/
+  text-align: center;
+}
+.Box1 {
+  color: #FC9E4F;
+  width: 20%;
+}
+
+
+
+.StudentsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.StudentsOne, .Building {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 30%;
+  text-align: center;
+  align-items: center;
+  color: #76E5FC;
+}
+.GithubImages {
+  width: 5%;
+}
+.BoxContainer {
+  width: 60%;
+}
+.BoxOnly {
+  background-color: #F5F0F6;
+  border-radius: 10px;
+  width:100%;
+}
+.Image2 {
+  width: 80%;
+  height: 400px;
+  padding-top: 60px;
+} 
+.Image3 {
+  width: 80%;
+}
+.Image4 {
+  width: 60%;
+  padding: 10px;
+}
+.Hazel {
+  width: 80%;
+  padding: 20px;
+}
+
+@media(max-width: 1282px) {
+  .Image2 {
+    height: 380px;
+  }
+}
+@media(max-width: 1024px){
+  .Image2 {
+    height: 300px;
+    padding-top: 90px;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TheBuilding</title>
+    <link rel="icon" type="image/png" href="./Media/building1.png" />
+    <link href="estadisticasStyles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="estadisticas.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawChartOne);
+      google.charts.setOnLoadCallback(drawChartTwo);
+      google.charts.setOnLoadCallback(drawChartThree);
+      google.charts.setOnLoadCallback(drawChartFour);
+      google.charts.setOnLoadCallback(drawChartFive);
+      google.charts.setOnLoadCallback(drawChartSix);
+      google.charts.setOnLoadCallback(drawChartSeven);
+      google.charts.setOnLoadCallback(drawChartEight);
+      google.charts.setOnLoadCallback(drawChartNine);
+      google.charts.setOnLoadCallback(drawChartTen);
+    </script>
+</head>
+<body>
+    <div class="Wrapper">
+        <div class="Menu" id="Menu">
+            <a href="./contactanos.html">Contáctanos</a>
+            <a href="./reto.html">Reto</a>
+            <a href="./estadisticas.html">Estadísticas</a>
+            <a href="./instrucciones.html">Instrucciones</a>
+            <a href="./acercaDe.html">Acerca de</a>
+            <a href="./inicio.html">Inicio</a>
+        </div>
+        <h3>Estadísticas globales</h3>
+        <div class="GlobalStadisticsContainer">
+            <div class="GlobalStadistics">
+                <h2>Minutos jugados totales</h2>
+                <div class="chart" id="barchart_material" style="width: 600px; height: 300px;"></div>
+            </div>
+            <div class="GlobalStadistics">
+                <h2>Duración de sesión</h2>
+                <div class="chart" id="barchart_material_One" style="width: 600px; height: 300px;"></div>
+            </div>
+        </div>
+        <div class="LocalStadisticsContainer">
+            <h3>Estadísticas Locales</h3>
+            <div class="LocalStadisticsOne">
+                <div class="LocalStadistics">
+                    <h2>Éxito o fallo por nivel</h2>
+                    <div id="columnchart_material" style="width: 500px; height: 500px;"></div>
+                </div>
+                <div class="LocalStadistics">
+                    <h2>Máxima terminación de juego</h2>
+                    <div id="columnchart_material_One" style="width: 400px; height: 500px;"></div>
+                </div>
+            </div>
+            <div class="LocalStadisticsTwo">
+                <div class="LocalStadistics">
+                    <h2>Mínima terminación de juego</h2>
+                    <div id="columnchart_material_Two" style="width: 400px; height: 500px;"></div>
+                </div>
+                <div class="LocalStadistics">
+                    <h2>Tiempo restante de sala</h2>
+                    <div id="columnchart_material_Three" style="width: 600px; height: 500px;"></div>
+                </div>
+            </div>
+            <div class="LocalStadisticsThree">
+                <div class="LocalStadistics">
+                    <h2>Partidas perdidas por tiempo de sala</h2>
+                    <div id="columnchart_material_Four" style="width: 400px; height: 500px;"></div>
+                </div>
+                <div class="LocalStadistics">
+                    <h2>Partidas perdidas por ahogo</h2>
+                    <div id="columnchart_material_Five" style="width: 400px; height: 500px;"></div>
+                </div>
+            </div>
+            <div class="LocalStadisticsFour">
+                <div class="LocalStadistics">
+                    <h2>Items de oportunidad por nivel</h2>
+                    <div id="columnchart_material_Six" style="width: 500px; height: 500px;"></div>
+                </div>
+                <div class="LocalStadistics">
+                    <h2>Items de oportunidad por sala</h2>
+                    <div id="columnchart_material_Seven" style="width: 600px; height: 500px;"></div>
+                </div>
+            </div>
+            <div class="LocalStadisticsFive">
+                <div class="LocalStadistics">
+                    <h2>Items de tips utilizados por edificio</h2>
+                    <div id="columnchart_material_Eight" style="width: 400px; height: 500px;"></div>
+                </div>
+                <!--
+                <div class="LocalStadistics">
+                    <h2>Personas con habilidades desarrolladas</h2>
+                    <p>gráfica aquí </p>
+                </div>
+                -->
+            </div>
+        </div>
+        <div class="Top">
+            <a href="#Menu">
+                <img class="Image" src="./Media/top (1).png" alt="Folder"/>
+            </a>
+            <h3 class="Last">Subir al menú</h3>
+        </div>
+    </div>
+</body>

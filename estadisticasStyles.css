@@ -1,0 +1,125 @@
+body {
+  background-color: #2B4162;
+}
+.Wrapper {
+  /*padding: 50px;*/
+  /*max-width: 1024px;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  color: #F5F0F6;
+  font-family: 'Nunito', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color : #F5F0F6;
+}
+h3 {
+  letter-spacing: 10px;
+  margin: 60px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}
+    
+    
+    
+.Menu {
+  background-color: #2B4162;
+  top: 0;
+  width: 100%;
+}
+.Menu a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  margin: 20px 40px;
+  text-decoration: none;
+  font-size: 14px;
+}
+a:link {
+  color: #4BC0D9;
+} 
+a:visited {
+  text-decoration: none;
+  color: #4BC0D9;
+}  
+a:hover {
+  color: #FC9E4F;
+}  
+a:active {
+  text-decoration: underline;
+}
+
+
+
+.GlobalStadisticsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  text-align: left;
+}
+.GlobalStadistics {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 50%;
+}
+.LocalStadisticsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 100%;
+  text-align: left;
+}
+.LocalStadisticsOne, .LocalStadisticsTwo, .LocalStadisticsThree, .LocalStadisticsFour, .LocalStadisticsFive {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.LocalStadistics{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 50%;
+}
+
+
+
+.Top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Image {
+  width: 5%;
+  border: 2px solid #4BC0D9;
+  border-radius: 50%;
+  padding: 5px;
+  transform: rotate(180deg);
+}
+.Last {
+  letter-spacing: 10px;
+  margin: 10px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}

@@ -1,0 +1,228 @@
+body {
+  background-color: #2B4162;
+}
+.Wrapper {
+  /*padding: 50px;*/
+  /*max-width: 1024px;*/
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  color: #F5F0F6;
+  font-family: 'Nunito', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5px;
+  color : #F5F0F6;
+}
+h3 {
+  letter-spacing: 10px;
+  margin: 40px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}
+  
+  
+  
+.Menu {
+  overflow: hidden;
+  background-color: #2B4162;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.Menu a {
+  float: right;
+  display: block;
+  color: #F5F0F6;
+  text-align: center;
+  margin: 20px 40px;
+  text-decoration: none;
+  font-size: 14px;
+}
+a:link {
+  color: #4BC0D9;
+} 
+a:visited {
+  text-decoration: none;
+  color: #4BC0D9;
+}  
+a:hover {
+  color: #FC9E4F;
+}  
+a:active {
+  text-decoration: underline;
+}
+
+
+
+.MovementContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 50px;
+  text-align: left;
+}
+.Movement {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  text-align: left;
+}
+.Movement1 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 50%;
+  text-align: left;
+}
+.Keyboard {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  text-align: center;
+}
+.Box {
+  width: 15%;
+}
+.Image1, .Image2, .Image3, .Image4 {
+  width: 30%;
+}
+.Image1 {
+  transform: rotate(270deg);
+}
+.Image2 {
+  transform: rotate(90deg);
+}
+.Image3 {
+  transform: rotate(180deg);
+}
+.Image5 {
+  width: 60%;
+  height: 10%;
+  background-color: #4BC0D9;
+  margin-left: 25px;
+  border-radius: 4px;
+}
+.Video {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.VideoBorder {
+  width: 60%;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.Image {
+  width: 20%;
+  margin-top: 50px;
+}
+.Youtube {
+  width: 50%;
+  border: 3px solid #4BC0D9;
+  border-radius: 5px;
+}
+.Youtube1 {
+  width: 50%;
+  border: 3px solid #FC9E4F;
+  border-radius: 5px;
+}
+
+
+
+.MiniGamesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  text-align: right;
+  margin-top: 150px;
+}
+.MiniGames {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 50%;
+  text-align: right;
+}
+.mouseArrow {
+  width: 5%;
+  margin-right: 80px;
+}
+.mouse {
+  width: 8%;
+  transform: rotate(270deg);
+  margin-right: 150px;
+}
+.Video {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Image {
+  width: 20%;
+  margin-top: 50px;
+}
+
+
+
+.DoorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 150px;
+  text-align: left;
+}
+.Door {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 50%;
+  text-align: left;
+}
+.Description {
+  margin: 0px 0px 0px 0px;
+}
+.Blue {
+  color: #76E5FC;
+  font-size: 50px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+
+
+.Image6 {
+  width: 7%;
+}
+
+
+@media(max-width: 1180px){
+  .Image {
+    margin-top: 65px;
+  }
+}
+
+@media(max-width: 976px){
+  .Image {
+    margin-top: 70px;
+  }
+  /*Hacer más grandes las imágenes*/
+}
