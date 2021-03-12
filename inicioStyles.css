@@ -218,7 +218,13 @@ a:active {
   flex-direction: column;
   justify-content:space-around;
   align-items: center;
-  width: 50%;
+  width: 45%;
+}
+.Download {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 45%;
 }
 .Box {
   display: flex;
