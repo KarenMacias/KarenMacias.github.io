@@ -6,20 +6,23 @@
     <link rel="icon" type="image/png" href="./Media/building1.png" />
     <link href="contactanosStyles.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@600&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">    
 </head>
 <body>
     <div class="Wrapper">
-        <div class="Menu">
-            <a href="./contactanos.html">Contáctanos</a>
-            <a href="./reto.html">Reto</a>
-            <a href="./estadisticas.html">Estadísticas</a>
-            <a href="./instrucciones.html">Instrucciones</a>
-            <a href="./acercaDe.html">Acerca de</a>
-            <a href="./inicio.html">Inicio</a>
-        </div>
+        <nav id="hamnav">
+            <div class="Space"></div>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div id="hamitems">
+                <a href="inicio.html">Inicio</a>
+                <a href="acercaDe.html">Acerca de</a>
+                <a href="instrucciones.html">Instrucciones</a>
+                <a href="estadisticas.html">Estadísticas</a>
+                <a href="reto.html">Reto</a>
+                <a href="contactanos.html">Contáctanos</a>
+            </div>
+        </nav>
         <div class="TitleContainer">
             <h3>Construcción de software y toma de decisiones</h3>
             <div class="LogoTecContainer">
@@ -27,28 +30,29 @@
             </div>
             <h2>Movimiento steam</h2>
         </div>
+        <h3 class="Title3">Profesores</h3>
         <div class="ProfessorsContainer">
-            <h3 class="Title3">Profesores</h3>
-            <div class="Professors">
+            <div class="Professor">
                 <div class="Box">
                     <img class="Image" src="./Media/Molina.png" alt="Professor Molina"/>
                 </div>
-                <div class="Box">
-                    <img class="Image" src="./Media/Sergio.png" alt="Professor Sergio"/>
-                </div>
-                <div class="Box">
-                    <img class="Image" src="./Media/Cristian.jpeg" alt="Professor Christian"/>
-                </div>
-            </div>
-            <div class="ProfessorsDataContainer">
                 <div class="Box1">
                     <p>José Martín Molina Espinosa</p>
-                    <p>Desarrollo tecnológico y desarrollo web</p>
-                    
+                    <p>Desarrollo tecnológico y desarrollo web</p>  
+                </div> 
+            </div>
+            <div class="Professor">
+                <div class="Box">
+                    <img class="Image" src="./Media/Sergio.png" alt="Professor Sergio"/>
                 </div>
                 <div class="Box1">
                     <p>Sergio Ruiz Loza</p>
                     <p>Bases de datos y videojuegos</p>
+                </div> 
+            </div>
+            <div class="Professor">
+                <div class="Box">
+                    <img class="Image" src="./Media/Cristian.jpeg" alt="Professor Christian"/>
                 </div>
                 <div class="Box1">
                     <p>Christian Vallejo</p>
@@ -69,18 +73,16 @@
                 <br>
                 <div class="BoxContainer">
                     <div class="BoxOnly">
-                        <img class="Image4" src="./Media/Pepe.jpeg" alt="Student José"/>
+                        <img class="Pepe" src="./Media/Pepe.jpeg" alt="Student José"/>
                     </div>
                     <p>José Ernesto Gómez Aguilar</p>
                     <p>A01658889</p>
                 </div>
             </div>
             <div class="GithubImages">
-                <br><br><br><br>
                 <a href="https://github.com/Karen0906">
                     <img class="Image3" src="./Media/github1.png" alt="Github"/>
                 </a>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <a href="https://github.com/JEGA27">
                     <img class="Image3" src="./Media/github1.png" alt="Github"/>
                 </a>
@@ -89,11 +91,9 @@
                 <img class="Image2" src="./Media/building (2).png" alt="Building image"/>
             </div>
             <div class="GithubImages">
-                <br><br><br><br>
                 <a href="https://github.com/HazelAngeles">
                     <img class="Image3" src="./Media/github1.png" alt="Github"/>
                 </a>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <a href="https://github.com/brobola">
                     <img class="Image3" src="./Media/github1.png" alt="Github"/>
                 </a>

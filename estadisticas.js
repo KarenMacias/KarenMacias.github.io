@@ -215,7 +215,7 @@ function drawChartSeven() {
       },
       hAxis: {
         title: 'Juego Completo',
-        minValue: 0
+        minValue: 0,
       },
       vAxis: {
         title: 'Cantidad'
@@ -294,25 +294,24 @@ function drawChartNine() {
 
 
 function drawChartTen() {
-    var data = google.visualization.arrayToDataTable([
-      ['Minutos', 'Mujeres', 'Hombres', 'Otros'],
-      ['Nivel 3', 5, 8, 9],
-    ]);
+  var data = google.visualization.arrayToDataTable([
+    ['Minutos', 'Mujeres', 'Hombres', 'Otros'],
+    ['Nivel 3', 5, 8, 9],
+  ]);
+  var options = {
+    chart: {
+      title: 'Items de tips utilizados en "TheBuilding"',
+    },
+    hAxis: {
+      title: 'Juego Completo',
+      minValue: 0
+    },
+    vAxis: {
+      title: 'Cantidad'
+    }
+  };
 
-    var options = {
-      chart: {
-        title: 'Items de tips utilizados en "TheBuilding"',
-      },
-      hAxis: {
-        title: 'Juego Completo',
-        minValue: 0
-      },
-      vAxis: {
-        title: 'Cantidad'
-      }
-    };
+  var chart8 = new google.charts.Bar(document.getElementById('columnchart_material_Eight'));
 
-    var chart8 = new google.charts.Bar(document.getElementById('columnchart_material_Eight'));
-
-    chart8.draw(data, google.charts.Bar.convertOptions(options));
+  chart8.draw(data, google.charts.Bar.convertOptions(options));
 }

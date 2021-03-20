@@ -6,14 +6,11 @@
     <link rel="icon" type="image/png" href="./Media/building1.png" />
     <link href="indexStyles.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@600&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">  
 </head>
 <body>
     <div class="Wrapper">
         <div class="Title">
-          <!--<h3>Sigue preparándote para tu profesión STEAM</h3> -->
           <h3>¿Puedes convertirte en un profesional del área STEAM?</h3>
           <h1>The building</h1>
         </div>
@@ -97,13 +94,23 @@
                     required="True"
                   ></input>
                 </div>
-                <label class="Label">Sexo</label><br>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Masculino</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Femenino</label>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Otro</label><br><br>
+                <div class="SexContainer">
+                  <label class="Label">Sexo</label>
+                  <div class="Sex">
+                    <div class="RadioButton">
+                      <input type="radio" id="male" name="gender" value="male">
+                      <label for="male">Masculino</label>
+                    </div>
+                    <div class="RadioButton">
+                      <input type="radio" id="female" name="gender" value="female">
+                      <label for="female">Femenino</label>
+                    </div>
+                    <div class="RadioButton">
+                      <input type="radio" id="other" name="gender" value="other">
+                      <label for="other">Otro</label><br><br>
+                    </div>
+                  </div>
+                </div>
                 <div class="ButtonBorder">
                   <p><a class="ButtonText" href="./inicio.html">Regístrate</a></p>
                 </div>

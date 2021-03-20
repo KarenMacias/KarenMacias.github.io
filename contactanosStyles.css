@@ -2,14 +2,10 @@ body {
   background-color: #2B4162;
 }
 .Wrapper {
-  /*padding: 50px;*/
-  /*max-width: 1024px;*/
   display: flex;
   justify-content: space-between;
-  /*align-items: center;*/
   color: #F5F0F6;
   font-family: 'Nunito', sans-serif;
-  /*font-family: 'Lato', sans-serif;*/
   text-align: center;
   flex-wrap: wrap;
   margin-left: 10px;
@@ -24,47 +20,53 @@ h2 {
 }
 h3 {
   letter-spacing: 10px;
-  margin: 40px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
   font-size: 15px;
   font-weight: lighter;
   text-transform: uppercase;
- color: #4BC0D9;
+  color: #4BC0D9;
 }
 p {
   margin: 5px 0px 0px 0px;
 }  
   
-  
-  
-.Menu {
-  overflow: hidden;
-  background-color: #2B4162;
-  position: fixed;
-  top: 0;
+
+
+
+#hamnav {
   width: 100%;
+  height: 60px;
+  background:#2B4162;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
 }
-.Menu a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
+#hamnav .space {
+  width: 40%;
+}
+#hamnav label, #hamburger { display: none; }
+#hamitems { display: flex; width: 60% }
+#hamitems a {
+  width: 20%;
+  padding: 15px;
+  color: #4BC0D9;
+  text-decoration: none;
   text-align: center;
-  margin: 20px 40px;
-  text-decoration: none;
   font-size: 14px;
+  float: right;
 }
-a:link {
-  color: #4BC0D9;
-} 
-a:visited {
-  text-decoration: none;
-  color: #4BC0D9;
-}  
-a:hover {
+#hamitems a:hover {
+  background: #2B4162;
   color: #FC9E4F;
-}  
-a:active {
+}
+#hamitems a:link {
+  color: #4BC0D9;
+}
+#hamitems a:active {
   text-decoration: underline;
 }
+
 
 
 
@@ -73,7 +75,6 @@ a:active {
   flex-direction: column;
   justify-content:space-between;
   width: 100%;
-  margin-top: 50px;
   text-align: center;
   align-items: center;
 }
@@ -93,7 +94,7 @@ a:active {
 
 .ProfessorsContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content:space-between;
   width: 100%;
   margin-top: 30px;
@@ -103,34 +104,23 @@ a:active {
   color: #FC9E4F;
   margin-bottom: 15px;
 }
-.Professors {
+.Professor {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content:space-around;
-  width: 100%;
-  /*margin-top: 50px;*/
+  width: 30%;
   text-align: center;
+  align-items: center;
+  color: #FC9E4F;
 }
 .Box {
   background-color: #F5F0F6;
   border-radius: 10px;
-  width:20%;
+  width:70%;
 }
 .Image {
   width: 80%;
   padding: 10px;
-}
-.ProfessorsDataContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  width: 100%;
-  /*margin-top: 50px;*/
-  text-align: center;
-}
-.Box1 {
-  color: #FC9E4F;
-  width: 20%;
 }
 
 
@@ -154,6 +144,10 @@ a:active {
 }
 .GithubImages {
   width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .BoxContainer {
   width: 60%;
@@ -171,7 +165,7 @@ a:active {
 .Image3 {
   width: 80%;
 }
-.Image4 {
+.Image4, .Pepe {
   width: 60%;
   padding: 10px;
 }
@@ -190,4 +184,166 @@ a:active {
     height: 300px;
     padding-top: 90px;
   }
+  .Box1 {
+    font-size: 14px;
+  }
+  .BoxContainer {
+    font-size: 14px;
+  }
+  .GithubImages {
+    height: 90%;
+  }
+  .Hazel {
+    padding: 10px;
+  }
+}
+
+@media(max-width: 812px) {
+  .Image2 {
+    width: 250px;
+  }
+}
+
+
+@media(max-width: 719px) {
+  .ProfessorsContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0px;
+  }
+  .Professor {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .Box1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Box {
+    background-color: #F5F0F6;
+    border-radius: 10px;
+    width:40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .Image {
+    width: 50%;
+    padding: 10px;
+  }
+  .StudentsContainer {
+    flex-direction: column;
+  }
+  .StudentsOne {
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+  }
+  .BoxContainer {
+    width: 45%;
+  }
+  .Pepe {
+    width: 53%;
+  }
+  .GithubImages {
+    flex-direction: row;
+    width: 100%;
+  }
+  .Image3 {
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .Building {
+    width: 100%;
+  }
+  .Image2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media(max-width: 594px) {
+  .LogoTecContainer {
+    width: 30%;
+  }
+  .Hazel {
+    padding: 15px;
+  }
+  .Image3 {
+    width: 15%;
+  }
+}
+
+@media(max-width: 481px) {
+  .LogoTecContainer {
+    width: 50%;
+  }
+  .BoxContainer {
+    font-size: 12px;
+  }
+  .Professor {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .Box {
+    width: 60%;
+  }
+  .Box1 {
+    width: 90%;
+  }
+  .Image3 {
+    width: 20%;
+  }
+}
+
+
+
+/*Menu styles */
+@media screen and (max-width: 1105px) {
+  #hamnav .Space {
+    width: 20%;
+  }
+  #hamitems {
+    display: flex; 
+    width: 80% 
+  }
+}
+@media screen and (max-width: 824px) {
+  #hamnav .Space {
+    width: 10%;
+  }
+  #hamitems {
+    width: 90% 
+  }
+}
+@media screen and (max-width: 768px){
+  h3 {
+    margin: 20px 0px 0px 0px;
+  }
+  #hamnav .Space {
+    width: 0%;
+  }
+  #hamitems {
+    width: 100% 
+  }
+  #hamnav label { 
+    display: inline-block; 
+    color: #f2f2f2;
+    background: #2B4162;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background-color: #2B4162;
+  }
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
 }

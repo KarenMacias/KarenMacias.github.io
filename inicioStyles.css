@@ -2,18 +2,12 @@ body {
   background-color: #2B4162;
 }
 .Wrapper {
-  /*padding: 50px;*/
-  /*max-width: 1024px;*/
   display: flex;
   justify-content: space-between;
-  /*align-items: center;*/
   color: #F5F0F6;
   font-family: 'Nunito', sans-serif;
-  /*font-family: 'Lato', sans-serif;*/
   text-align: center;
   flex-wrap: wrap;
-  /*margin-left: 10px;
-  margin-right: 10px;;*/
 }
 h1 {
   text-transform: uppercase;
@@ -48,35 +42,40 @@ h4 {
 
 
 
-.Menu {
-  overflow: hidden;
-  background-color: #2B4162;
-  position: fixed;
-  top: 0;
+#hamnav {
   width: 100%;
+  height: 60px;
+  background:#2B4162;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
 }
-.Menu a {
-  float: right;
-  display: block;
-  color: #F5F0F6;
+#hamnav .space {
+  width: 40%;
+}
+#hamnav label, #hamburger { display: none; }
+#hamitems { display: flex; width: 60% }
+#hamitems a {
+  width: 20%;
+  padding: 15px;
+  color: #4BC0D9;
+  text-decoration: none;
   text-align: center;
-  margin: 20px 40px;
-  text-decoration: none;
   font-size: 14px;
+  float: right;
 }
-a:link {
-  color: #4BC0D9;
-} 
-a:visited {
-  text-decoration: none;
-  color: #4BC0D9;
-}  
-a:hover {
+#hamitems a:hover {
+  background: #2B4162;
   color: #FC9E4F;
-}  
-a:active {
+}
+#hamitems a:link {
+  color: #4BC0D9;
+}
+#hamitems a:active {
   text-decoration: underline;
 }
+
 
 
 
@@ -86,7 +85,6 @@ a:active {
   justify-content:space-between;
   align-items: center;
   width: 100%;
-  margin-top: 50px;
 }
 .Button {
   background-color: #4BC0D9;
@@ -102,13 +100,13 @@ a:active {
   color: #4BC0D9;
 }
 .Button1:link {
-  color: #F5F0F6; /*#2B4162;*/
+  color: #F5F0F6;
   text-decoration: none;
 }
     
 .Button1:visited {
   text-decoration: none;
-  color:#F5F0F6; /*#2B4162;*/
+  color:#F5F0F6;
 }
     
 .Button1:hover {
@@ -226,6 +224,18 @@ a:active {
   justify-content:flex-start;
   width: 45%;
 }
+a {
+  color: #4BC0D9;
+}
+a:hover {
+  color: #FC9E4F;
+}
+a:link {
+  color: #4BC0D9;
+}
+a:active {
+  text-decoration: underline;
+}
 .Box {
   display: flex;
   flex-direction: row;
@@ -253,13 +263,23 @@ a:active {
   .RecordsContainer {
     width: 70%;
   }
+  .MoreAboutContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Tags {
+    width: 90%;
+  }
+  .Download {
+    width: 100%;
+  }
 }
 
-@media(max-width: 818px) {
+@media(max-width: 856px) {
   .RecordsContainer {
     width: 85%;
   }
-  /*Menú ya se ve mal*/
 }
 
 @media(max-width: 664px) {
@@ -269,4 +289,80 @@ a:active {
   .Time {
     text-align: left;
   }
+}
+
+@media(max-width: 536px) {
+  .Player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+  .PlayerTime {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+  }
+  .DownloadContainer {
+    width: 100%;
+  }
+}
+
+@media(max-width: 390){
+  .Player{
+    align-items: left;
+    width: 60%;
+  }
+  .PlayerTime {
+    width: 40%;
+  }
+}
+
+
+/*Hasta el 390 los records se ven bien*/
+/*Cambiar estructura de los records, 5 divs dentro del container, cada uno con 3 divs, el de nombre, time y tiempo final
+
+
+/*Menu styles */
+@media screen and (max-width: 1105px) {
+  #hamnav .Space {
+    width: 20%;
+  }
+  #hamitems {
+    display: flex; 
+    width: 80% 
+  }
+}
+@media screen and (max-width: 824px) {
+  #hamnav .Space {
+    width: 10%;
+  }
+  #hamitems {
+    width: 90% 
+  }
+}
+@media screen and (max-width: 768px){
+  #hamnav .Space {
+    width: 0%;
+  }
+  #hamitems {
+    width: 100% 
+  }
+  #hamnav label { 
+    display: inline-block; 
+    color: #f2f2f2;
+    background: #2B4162;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background-color: #2B4162;
+  }
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
 }
